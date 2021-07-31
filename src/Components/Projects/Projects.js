@@ -7,7 +7,7 @@ const Projects = (props) => {
       data-aos="zoom-in"
       className={`${props.className} ${classes.projects}`}
     >
-      <h2> Projects</h2>
+      <h2>My Projects</h2>
       <p>
         {' '}
         online code playground. Try a Hello World template on CodePen,
@@ -17,11 +17,10 @@ const Projects = (props) => {
       <div className={classes.projectsContainer}>
         <div className={classes.project}>
           <h3>Noter App</h3>
-
-          <img src={noterJPG} />
-          <div className={classes.demoLink}>
-            <a href="https://zabtani.github.io/Noter/">watch live demo</a>
-          </div>
+          <a href="https://zabtani.github.io/Noter/">
+            <img src={noterJPG} />
+            <div className={classes.demoLink}>watch live demo</div>
+          </a>
           <p>
             If you’re interested in playing around with React, you can use an
             online code playground. Try a Hello World template on CodePen,
@@ -34,11 +33,10 @@ const Projects = (props) => {
         </div>
         <div className={classes.project}>
           <h3>Shop App</h3>
-
-          <img src={shopJPG} />
-          <div className={classes.demoLink}>
-            <a href="https://zabtani.github.io/shop/">watch live demo</a>
-          </div>
+          <a href="https://zabtani.github.io/shop/">
+            <img src={shopJPG} />
+            <div className={classes.demoLink}>watch live demo</div>
+          </a>
           <p>
             If you’re interested in playing around with React, you can use an
             online code playground. Try a Hello World template on CodePen,
