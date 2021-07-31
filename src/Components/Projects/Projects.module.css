@@ -1,5 +1,6 @@
 .projectsContainer {
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .project p {
@@ -8,10 +9,11 @@
 }
 .project h3 {
   width: auto;
+  margin-top: 0;
 }
 .project img {
-  height: 13rem;
-  width: 23.5rem;
+  height: 1%;
+  width: 95%;
 }
 .project {
   margin: 0 2% 2% 2%;
@@ -29,13 +31,4 @@
 .demoLink:hover {
   color: whitesmoke;
   background: rgba(0, 179, 0, 0.575);
-}
-@media only screen and (max-width: 650px) {
-  .projectsContainer {
-    flex-direction: column;
-  }
-  .project img {
-    height: 8rem;
-    width: 16rem;
-  }
 }
