@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Protfolio/static/css/main.77f4e48f.chunk.css",
+    "main.css": "/Protfolio/static/css/main.02546610.chunk.css",
     "main.js": "/Protfolio/static/js/main.6b873db2.chunk.js",
     "main.js.map": "/Protfolio/static/js/main.6b873db2.chunk.js.map",
     "runtime-main.js": "/Protfolio/static/js/runtime-main.e29b508a.js",
@@ -12,7 +12,7 @@
     "static/js/3.9443712a.chunk.js.map": "/Protfolio/static/js/3.9443712a.chunk.js.map",
     "index.html": "/Protfolio/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/Protfolio/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.77f4e48f.chunk.css.map": "/Protfolio/static/css/main.77f4e48f.chunk.css.map",
+    "static/css/main.02546610.chunk.css.map": "/Protfolio/static/css/main.02546610.chunk.css.map",
     "static/js/2.60e6f21c.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.60e6f21c.chunk.js.LICENSE.txt",
     "static/media/colorsGame.ca58c652.jpg": "/Protfolio/static/media/colorsGame.ca58c652.jpg",
     "static/media/noter.c785e9ad.jpg": "/Protfolio/static/media/noter.c785e9ad.jpg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.e29b508a.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.60e6f21c.chunk.js",
-    "static/css/main.77f4e48f.chunk.css",
+    "static/css/main.02546610.chunk.css",
     "static/js/main.6b873db2.chunk.js"
   ]
 }
