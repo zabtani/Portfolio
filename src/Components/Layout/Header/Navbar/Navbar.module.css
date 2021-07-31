@@ -49,7 +49,6 @@
 }
 
 .navbar nav .menuButton {
-  margin-left: 2.8%;
   display: none;
 }
 .navbar .backdrop {
@@ -70,12 +69,12 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    width: 0;
+    padding: 2%;
+    width: fit-content;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
   }
   .navbar nav .menuButton {
-    margin-top: 3%;
     align-self: start;
     display: block;
     color: whitesmoke;
@@ -89,6 +88,7 @@
   }
   .navbar.shown nav {
     width: 70%;
+    height: 100vh;
     background: #50b5da;
     border-right: 1rem solid rgba(54, 165, 255, 0.808);
     border-style: groove;
@@ -137,7 +137,7 @@
     padding: 2%;
   }
   .navbar nav ul .sidelinks {
-    margin-top: 50%;
+    margin-top: 10%;
     height: fit-content;
 
     display: flex;

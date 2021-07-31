@@ -5,6 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import GithubSVG from '../../../Svg/GithubSVG';
 import LinkedinSVG from '../../../Svg/LinkedinSVG';
 import LogoSVG from '../../../Svg/LogoSVG';
+import { Hidden } from '@material-ui/core';
 const Navbar = (props) => {
   const [mobileMenuOpen, setMobileMenu] = useState(false);
   const handleLink = (sectionName) => {
@@ -13,6 +14,7 @@ const Navbar = (props) => {
     }
     props.show(sectionName);
   };
+
   const toggleMobileMenu = () => {
     setMobileMenu((state) => !state);
   };
@@ -50,6 +52,9 @@ const Navbar = (props) => {
       </li>
     </ul>
   );
+  document.documentElement.style.overflowY = mobileMenuOpen
+    ? 'hidden'
+    : 'scroll';
 
   const navbarClass = mobileMenuOpen
     ? `${classes.navbar} ${classes.shown}`
