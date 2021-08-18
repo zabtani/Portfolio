@@ -2,33 +2,5 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-.project p {
-  width: 96%;
-  padding: 2%;
-}
-.project h3 {
-  width: auto;
-  margin-top: 0;
-}
-.project img {
-  height: 1%;
-  width: 95%;
-}
-.project {
-  margin: 0 2% 2% 2%;
-  background: #d1d1d169;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-bottom: 2rem;
-}
-.demoLink {
-  background: rgba(0, 252, 0, 0.212);
-  width: fit-content;
-  border-radius: 8px;
-  padding: 2%;
-  margin: 2% auto 2% auto;
-}
-.demoLink:hover {
-  color: whitesmoke;
-  background: rgba(0, 179, 0, 0.575);
+  align-items: center;
 }

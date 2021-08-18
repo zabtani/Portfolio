@@ -1,0 +1,22 @@
+.project {
+  width: 65%;
+  margin: 2%;
+}
+.project .title {
+  padding: 0.5%;
+  font-weight: bold;
+  background-color: rgba(131, 131, 131, 0.301);
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 650px) {
+  .project {
+    width: 85%;
+  }
+  .project .title {
+    font-size: 160%;
+  }
+}
