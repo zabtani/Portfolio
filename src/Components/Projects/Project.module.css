@@ -33,7 +33,7 @@
 }
 @media only screen and (max-width: 650px) {
   .title .svgs {
-    width: 3rem;
+    width: 4rem;
   }
   .project {
     width: 85%;
