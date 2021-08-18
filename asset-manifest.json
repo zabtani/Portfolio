@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Protfolio/static/css/main.b07630af.chunk.css",
+    "main.css": "/Protfolio/static/css/main.1cba64cb.chunk.css",
     "main.js": "/Protfolio/static/js/main.0ddbb2b3.chunk.js",
     "main.js.map": "/Protfolio/static/js/main.0ddbb2b3.chunk.js.map",
     "runtime-main.js": "/Protfolio/static/js/runtime-main.3b48a6d6.js",
@@ -12,7 +12,7 @@
     "static/js/3.f60ebcba.chunk.js.map": "/Protfolio/static/js/3.f60ebcba.chunk.js.map",
     "index.html": "/Protfolio/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/Protfolio/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.b07630af.chunk.css.map": "/Protfolio/static/css/main.b07630af.chunk.css.map",
+    "static/css/main.1cba64cb.chunk.css.map": "/Protfolio/static/css/main.1cba64cb.chunk.css.map",
     "static/js/2.1c308947.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.1c308947.chunk.js.LICENSE.txt",
     "static/media/colorsGame.ca58c652.jpg": "/Protfolio/static/media/colorsGame.ca58c652.jpg",
     "static/media/ipcheck.d1e947f6.jpg": "/Protfolio/static/media/ipcheck.d1e947f6.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.3b48a6d6.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1c308947.chunk.js",
-    "static/css/main.b07630af.chunk.css",
+    "static/css/main.1cba64cb.chunk.css",
     "static/js/main.0ddbb2b3.chunk.js"
   ]
 }
