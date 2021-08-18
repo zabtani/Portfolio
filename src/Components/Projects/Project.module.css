@@ -3,16 +3,38 @@
   margin: 2%;
 }
 .project .title {
+  display: flex;
+  justify-content: space-between;
   padding: 0.5%;
   font-weight: bold;
   background-color: rgba(131, 131, 131, 0.301);
 }
+
 .actions {
   display: flex;
   justify-content: space-between;
 }
-
+.project b {
+  color: #3f51b5;
+}
+.actions a {
+  font-weight: bolder;
+}
+.title .svgs {
+  width: 5rem;
+  justify-content: space-between;
+  display: flex;
+  line-height: 110%;
+}
+.title .svgs svg {
+  align-self: center;
+  width: 1.4rem;
+  vertical-align: middle;
+}
 @media only screen and (max-width: 650px) {
+  .title .svgs {
+    width: 3rem;
+  }
   .project {
     width: 85%;
   }
