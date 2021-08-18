@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/Protfolio/static/css/main.b659de2c.chunk.css",
-    "main.js": "/Protfolio/static/js/main.1fabc0f1.chunk.js",
-    "main.js.map": "/Protfolio/static/js/main.1fabc0f1.chunk.js.map",
+    "main.css": "/Protfolio/static/css/main.22925331.chunk.css",
+    "main.js": "/Protfolio/static/js/main.0ddbb2b3.chunk.js",
+    "main.js.map": "/Protfolio/static/js/main.0ddbb2b3.chunk.js.map",
     "runtime-main.js": "/Protfolio/static/js/runtime-main.3b48a6d6.js",
     "runtime-main.js.map": "/Protfolio/static/js/runtime-main.3b48a6d6.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/Protfolio/static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.158002d5.chunk.js": "/Protfolio/static/js/2.158002d5.chunk.js",
-    "static/js/2.158002d5.chunk.js.map": "/Protfolio/static/js/2.158002d5.chunk.js.map",
+    "static/js/2.1c308947.chunk.js": "/Protfolio/static/js/2.1c308947.chunk.js",
+    "static/js/2.1c308947.chunk.js.map": "/Protfolio/static/js/2.1c308947.chunk.js.map",
     "static/js/3.f60ebcba.chunk.js": "/Protfolio/static/js/3.f60ebcba.chunk.js",
     "static/js/3.f60ebcba.chunk.js.map": "/Protfolio/static/js/3.f60ebcba.chunk.js.map",
     "index.html": "/Protfolio/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/Protfolio/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.b659de2c.chunk.css.map": "/Protfolio/static/css/main.b659de2c.chunk.css.map",
-    "static/js/2.158002d5.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.158002d5.chunk.js.LICENSE.txt",
+    "static/css/main.22925331.chunk.css.map": "/Protfolio/static/css/main.22925331.chunk.css.map",
+    "static/js/2.1c308947.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.1c308947.chunk.js.LICENSE.txt",
     "static/media/colorsGame.ca58c652.jpg": "/Protfolio/static/media/colorsGame.ca58c652.jpg",
     "static/media/ipcheck.d1e947f6.jpg": "/Protfolio/static/media/ipcheck.d1e947f6.jpg",
     "static/media/noter.c785e9ad.jpg": "/Protfolio/static/media/noter.c785e9ad.jpg",
     "static/media/protfolio.8c71b7c1.jpg": "/Protfolio/static/media/protfolio.8c71b7c1.jpg",
-    "static/media/shop.04297776.jpg": "/Protfolio/static/media/shop.04297776.jpg"
+    "static/media/shop.8d532548.jpg": "/Protfolio/static/media/shop.8d532548.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3b48a6d6.js",
     "static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.158002d5.chunk.js",
-    "static/css/main.b659de2c.chunk.css",
-    "static/js/main.1fabc0f1.chunk.js"
+    "static/js/2.1c308947.chunk.js",
+    "static/css/main.22925331.chunk.css",
+    "static/js/main.0ddbb2b3.chunk.js"
   ]
 }
