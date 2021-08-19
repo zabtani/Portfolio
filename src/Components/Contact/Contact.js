@@ -1,7 +1,7 @@
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 import classes from './Contact.module.css';
-import { d } from '../../config.js';
+import { d } from '../../apiconfig.js';
 const Contact = (props) => {
   console.log(d);
 
