@@ -13,7 +13,7 @@
 
 # misc
 #ignore cofig api filee
-!src/apiconfig.js
+!apiconfig.js
 .DS_Store
 .env.local
 .env.development.local
