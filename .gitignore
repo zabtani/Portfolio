@@ -12,7 +12,7 @@
 /build
 
 # misc
-#ignore cofig api file
+#ignore cofig api filee
 !src/apiconfig.js
 .DS_Store
 .env.local
