@@ -1,20 +1,17 @@
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 import classes from './Contact.module.css';
-import { d } from '../../apiconfig.js';
+import { emailjsAPI } from '../../apiconfig.js';
 const Contact = (props) => {
-  console.log(d);
-
-  init('user_nTGRWXN7LG25CrnXxMIj4');
+  init(emailjsAPI.apiKey);
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        'service_q378jy4',
-        'template_xn6rzuw',
+        emailjsAPI.service,
+        emailjsAPI.template,
         e.target,
-        'user_nTGRWXN7LG25CrnXxMIj4'
+        emailjsAPI.apiKey
       )
       .then(
         (result) => {
@@ -27,7 +24,8 @@ const Contact = (props) => {
   };
   return (
     <div data-aos="zoom-in" className={`${props.className} ${classes.contact}`}>
-      <h2> welcome</h2>
+      <h2> Call me for an interview</h2>
+
       <form className="contact-form" onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
@@ -40,12 +38,8 @@ const Contact = (props) => {
         <input type="submit" value="Send" />
       </form>
       <p>
-        If you’re interested in playing around with React, you can use an online
-        code playground. Try a Hello World template on CodePen, CodeSandbox, or
-        Stackblitz. If you prefer to use your own text editor, you can also
-        download this HTML file, edit it, and open it from the local filesystem
-        in your browser. It does a slow runtime code transformation, so we’d
-        only recommend using this for simple demos.
+        send me an email for zabtani@gmail.com, or just fill the form above, and
+        lets be in touch.
       </p>
     </div>
   );
