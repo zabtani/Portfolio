@@ -5,7 +5,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import GithubSVG from '../../../Svg/GithubSVG';
 import LinkedinSVG from '../../../Svg/LinkedinSVG';
 import LogoSVG from '../../../Svg/LogoSVG';
-import { Hidden } from '@material-ui/core';
 const Navbar = (props) => {
   const [mobileMenuOpen, setMobileMenu] = useState(false);
   const handleLink = (sectionName) => {

@@ -1,15 +1,19 @@
+import {
+  noterJPG,
+  shopJPG,
+  colorsGameJPG,
+  ipcheckJPG,
+  protfolioJPG,
+} from '../../Components';
 import classes from './Projects.module.css';
-import noterJPG from './noter.jpg';
-import shopJPG from './shop.jpg';
-import colorsGameJPG from './colorsGame.jpg';
-import ipcheckJPG from './ipcheck.jpg';
-import protfolioJPG from './protfolio.jpg';
+
 import Project from './Project';
 const Projects = (props) => {
   const react = <b>React</b>;
   const plainJs = <b>Plain JavaScript</b>;
   const projects = [
     {
+      id: '001',
       name: 'Noter App',
       description: (
         <span>
@@ -24,6 +28,7 @@ const Projects = (props) => {
       techs: ['react', 'html', 'css'],
     },
     {
+      id: '002',
       name: 'IP check',
       description: (
         <span>
@@ -39,6 +44,7 @@ const Projects = (props) => {
       techs: ['react', 'html', 'css'],
     },
     {
+      id: '003',
       name: 'Shop App',
       description: (
         <span>
@@ -53,6 +59,7 @@ const Projects = (props) => {
       techs: ['javascript', 'html', 'css'],
     },
     {
+      id: '004',
       name: 'Colors game',
       description: 'bla bla bla',
       demoUrl: 'https://zabtani.github.io/Colors-game/',
@@ -61,9 +68,10 @@ const Projects = (props) => {
       techs: ['javascript', 'html', 'css'],
     },
     {
+      id: '005',
       name: 'Protfolio',
       description: 'bla bla bla',
-      demoUrl: false,
+      demoUrl: undefined,
       sourceUrl: 'https://github.com/zabtani/Protfolio',
       img: protfolioJPG,
       techs: ['react', 'html', 'css'],
@@ -79,7 +87,7 @@ const Projects = (props) => {
       <p>projects that i build in order to practice</p>
       <div className={classes.projectsContainer}>
         {projects.map((project) => {
-          return <Project {...project} />;
+          return <Project key={project.id} {...project} />;
         })}
       </div>
     </div>
