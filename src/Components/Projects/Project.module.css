@@ -25,12 +25,12 @@
   justify-content: space-between;
   display: flex;
   line-height: 110%;
-}
-.title .svgs svg {
   align-self: center;
-  width: 1.4rem;
-  vertical-align: middle;
 }
+.title svg {
+  margin-left: 3%;
+}
+
 @media only screen and (max-width: 650px) {
   .title .svgs {
     width: 4rem;

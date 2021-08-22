@@ -2,20 +2,28 @@ import classes from './Navbar.module.css';
 import React, { useState } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import GithubSVG from '../../../Svg/GithubSVG';
-import LinkedinSVG from '../../../Svg/LinkedinSVG';
-import LogoSVG from '../../../Svg/LogoSVG';
+import GithubSVG from '../../Svg/GithubSVG';
+import LinkedinSVG from '../../Svg/LinkedinSVG';
+import LogoSVG from '../../Svg/LogoSVG';
+import FadeAnimation from '../../Animations/FadeAnimation';
 const Navbar = (props) => {
+  const [isSlideDone, setIsSlideDone] = useState(false);
   const [mobileMenuOpen, setMobileMenu] = useState(false);
   const handleLink = (sectionName) => {
     if (mobileMenuOpen) {
       setMobileMenu(false);
+      setIsSlideDone(false);
     }
     props.show(sectionName);
   };
 
   const toggleMobileMenu = () => {
     setMobileMenu((state) => !state);
+    mobileMenuOpen
+      ? setIsSlideDone(false)
+      : setTimeout(() => {
+          setIsSlideDone(true);
+        }, 300);
   };
 
   const logo = (
@@ -69,10 +77,12 @@ const Navbar = (props) => {
       <nav>
         {menuIcon}
         {logo}
-        <ul>
-          {sections}
-          {sideLinks}
-        </ul>
+        <FadeAnimation in={isSlideDone || window.screen.width > 650}>
+          <ul>
+            {sections}
+            {sideLinks}
+          </ul>
+        </FadeAnimation>
       </nav>
     </div>
   );

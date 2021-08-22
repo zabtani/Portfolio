@@ -17,7 +17,6 @@
 }
 .navbar ul .sidelinks li,
 .logo {
-  padding-top: 0.4rem;
   width: 2rem;
   margin: 0 1% 0 1%;
 }
@@ -31,7 +30,7 @@
 }
 
 .navbar ul li button {
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: max-content;
   height: 100%;
   background-color: transparent;
@@ -70,7 +69,8 @@
     z-index: 2;
     top: 0;
     padding: 2%;
-    width: fit-content;
+    transition: width 1s;
+    width: 0;
     flex-direction: column;
     height: 100%;
   }
@@ -139,7 +139,6 @@
   .navbar nav ul .sidelinks {
     margin-top: 10%;
     height: fit-content;
-
     display: flex;
   }
   .logo {

@@ -6,6 +6,8 @@ import { TextField, Button } from '@material-ui/core';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import { useState } from 'react';
+import FadeAnimation from '../Animations/FadeAnimation';
+
 const Contact = (props) => {
   const [error, setError] = useState(false);
   const [formIsSent, setFormIsSent] = useState(false);
@@ -58,19 +60,24 @@ const Contact = (props) => {
   );
 
   return (
-    <div data-aos="zoom-in" className={`${props.className} ${classes.contact}`}>
-      <h2> Contact</h2>
-      {error ? errorText : formIsSent ? succsesText : contactForm}
-      <p>
-        You can also just send me a message to <b>zabtani@gmail.com</b>,
-        <br />
-        call/text me to <b>0525206108</b>, or send me a message via my
-        <b className={classes.link}>
-          <a href="https://linkedin.com/in/omer-zabtani-b09543155"> Linkden </a>
-        </b>
-        account and i will contact you back.
-      </p>
-    </div>
+    <FadeAnimation>
+      <div className={`${props.className} ${classes.contact}`}>
+        <h2> Contact</h2>
+        {error ? errorText : formIsSent ? succsesText : contactForm}
+        <p>
+          You can also just send me a message to <b>zabtani@gmail.com</b>,
+          <br />
+          call/text me to <b>0525206108</b>, or send me a message via my
+          <b className={classes.link}>
+            <a href="https://linkedin.com/in/omer-zabtani-b09543155">
+              {' '}
+              Linkden{' '}
+            </a>
+          </b>
+          account and i will contact you back.
+        </p>
+      </div>
+    </FadeAnimation>
   );
 };
 

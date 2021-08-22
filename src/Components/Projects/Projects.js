@@ -1,3 +1,5 @@
+import ZoomAnimation from '../Animations/ZoomAnimation';
+import classes from './Projects.module.css';
 import {
   noterJPG,
   shopJPG,
@@ -5,9 +7,9 @@ import {
   ipcheckJPG,
   protfolioJPG,
 } from '../../Components';
-import classes from './Projects.module.css';
 
 import Project from './Project';
+import FadeAnimation from '../Animations/FadeAnimation';
 const Projects = (props) => {
   const react = <b>React</b>;
   const plainJs = <b>Plain JavaScript</b>;
@@ -48,9 +50,10 @@ const Projects = (props) => {
       name: 'Shop App',
       description: (
         <span>
-          Shop app build with {plainJs}. this ecommerce shop generates dynamic
-          catigories like prices,discounts,geners and brands base on the data
-          provided to the app.
+          Shop app build with {plainJs}. this ecommerce website generates
+          dynamic catigories like prices,discounts,geners and brands base on the
+          data provided to the app. includes search bar,business information
+          pages and cart features.
         </span>
       ),
       demoUrl: 'https://zabtani.github.io/shop/',
@@ -79,18 +82,17 @@ const Projects = (props) => {
   ];
 
   return (
-    <div
-      data-aos="zoom-in"
-      className={`${props.className} ${classes.projects}`}
-    >
-      <h2>My Projects</h2>
-      <p>projects that i build in order to practice</p>
-      <div className={classes.projectsContainer}>
-        {projects.map((project) => {
-          return <Project key={project.id} {...project} />;
-        })}
+    <FadeAnimation>
+      <div className={props.className}>
+        <h2>My Projects</h2>
+        <p>projects that i build in order to practice</p>
+        <div className={classes.projectsContainer}>
+          {projects.map((project) => {
+            return <Project key={project.id} {...project} />;
+          })}
+        </div>
       </div>
-    </div>
+    </FadeAnimation>
   );
 };
 

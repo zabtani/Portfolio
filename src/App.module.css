@@ -14,6 +14,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+svg {
+  height: 100%;
+  width: 100%;
+}
 .section p {
   overflow-wrap: break-word;
   font-size: 1.3rem;
@@ -25,7 +29,6 @@ h1,
 h2,
 h3 {
   color: #3aadd6;
-
   margin: 0.2%;
   font-family: 'Libre Baskerville', serif;
 }
@@ -39,6 +42,7 @@ h3 {
   background-color: rgba(194, 194, 194, 0.39);
 }
 h1 {
+  padding: 2%;
   font-size: 5rem;
 }
 a {
