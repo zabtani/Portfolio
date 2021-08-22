@@ -23,7 +23,7 @@ const Navbar = (props) => {
       ? setIsSlideDone(false)
       : setTimeout(() => {
           setIsSlideDone(true);
-        }, 300);
+        }, 150);
   };
 
   const logo = (
