@@ -79,6 +79,7 @@
     display: block;
     color: whitesmoke;
     background-color: #50b5da83;
+    position: fixed;
   }
 
   .navbar.shown nav .menuButton,

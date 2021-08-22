@@ -1,5 +1,5 @@
 import classes from './Navbar.module.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import GithubSVG from '../../Svg/GithubSVG';
@@ -59,10 +59,13 @@ const Navbar = (props) => {
       </li>
     </ul>
   );
-  document.documentElement.style.overflowY = mobileMenuOpen
-    ? 'hidden'
-    : 'scroll';
 
+  useEffect(() => {
+    document.documentElement.style.overflowY = mobileMenuOpen
+      ? 'hidden'
+      : 'scroll';
+    window.scrollTo(0, 0);
+  }, [mobileMenuOpen]);
   const navbarClass = mobileMenuOpen
     ? `${classes.navbar} ${classes.shown}`
     : classes.navbar;
