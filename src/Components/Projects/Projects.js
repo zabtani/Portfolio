@@ -1,4 +1,3 @@
-import ZoomAnimation from '../Animations/ZoomAnimation';
 import classes from './Projects.module.css';
 import {
   noterJPG,

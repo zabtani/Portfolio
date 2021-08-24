@@ -20,9 +20,8 @@ svg {
 }
 .section p {
   overflow-wrap: break-word;
-  font-size: 1.3rem;
 
-  padding: 1% 5% 1% 5%;
+  padding: 2% 5% 2% 5%;
   text-align: left;
 }
 h1,
@@ -60,7 +59,7 @@ h2 {
   }
 
   .section p {
-    font-size: 1rem;
+    font-size: 80%;
   }
   .section h2 {
     font-size: 1.5rem;
