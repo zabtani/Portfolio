@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Protfolio/static/css/main.58a62536.chunk.css",
-    "main.js": "/Protfolio/static/js/main.31a5f512.chunk.js",
-    "main.js.map": "/Protfolio/static/js/main.31a5f512.chunk.js.map",
-    "runtime-main.js": "/Protfolio/static/js/runtime-main.9ba43c07.js",
-    "runtime-main.js.map": "/Protfolio/static/js/runtime-main.9ba43c07.js.map",
-    "static/js/2.603a83d3.chunk.js": "/Protfolio/static/js/2.603a83d3.chunk.js",
-    "static/js/2.603a83d3.chunk.js.map": "/Protfolio/static/js/2.603a83d3.chunk.js.map",
-    "static/js/3.b99a4712.chunk.js": "/Protfolio/static/js/3.b99a4712.chunk.js",
-    "static/js/3.b99a4712.chunk.js.map": "/Protfolio/static/js/3.b99a4712.chunk.js.map",
+    "main.css": "/Protfolio/static/css/main.91cd5eef.chunk.css",
+    "main.js": "/Protfolio/static/js/main.d4813b9e.chunk.js",
+    "main.js.map": "/Protfolio/static/js/main.d4813b9e.chunk.js.map",
+    "runtime-main.js": "/Protfolio/static/js/runtime-main.6697adda.js",
+    "runtime-main.js.map": "/Protfolio/static/js/runtime-main.6697adda.js.map",
+    "static/js/2.a9e48f13.chunk.js": "/Protfolio/static/js/2.a9e48f13.chunk.js",
+    "static/js/2.a9e48f13.chunk.js.map": "/Protfolio/static/js/2.a9e48f13.chunk.js.map",
+    "static/js/3.459f6f60.chunk.js": "/Protfolio/static/js/3.459f6f60.chunk.js",
+    "static/js/3.459f6f60.chunk.js.map": "/Protfolio/static/js/3.459f6f60.chunk.js.map",
     "index.html": "/Protfolio/index.html",
-    "static/css/main.58a62536.chunk.css.map": "/Protfolio/static/css/main.58a62536.chunk.css.map",
-    "static/js/2.603a83d3.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.603a83d3.chunk.js.LICENSE.txt",
+    "static/css/main.91cd5eef.chunk.css.map": "/Protfolio/static/css/main.91cd5eef.chunk.css.map",
+    "static/js/2.a9e48f13.chunk.js.LICENSE.txt": "/Protfolio/static/js/2.a9e48f13.chunk.js.LICENSE.txt",
     "static/media/colorsGame.ca58c652.jpg": "/Protfolio/static/media/colorsGame.ca58c652.jpg",
     "static/media/ipcheck.d1e947f6.jpg": "/Protfolio/static/media/ipcheck.d1e947f6.jpg",
     "static/media/noter.c785e9ad.jpg": "/Protfolio/static/media/noter.c785e9ad.jpg",
@@ -19,9 +19,9 @@
     "static/media/shop.8d532548.jpg": "/Protfolio/static/media/shop.8d532548.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ba43c07.js",
-    "static/js/2.603a83d3.chunk.js",
-    "static/css/main.58a62536.chunk.css",
-    "static/js/main.31a5f512.chunk.js"
+    "static/js/runtime-main.6697adda.js",
+    "static/js/2.a9e48f13.chunk.js",
+    "static/css/main.91cd5eef.chunk.css",
+    "static/js/main.d4813b9e.chunk.js"
   ]
 }
