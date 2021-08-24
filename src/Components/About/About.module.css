@@ -8,3 +8,10 @@
 .about {
   min-height: 50vh;
 }
+
+@media only screen and (max-width: 650px) {
+  .about .svg {
+    width: 18vh;
+    height: 18vh;
+  }
+}
