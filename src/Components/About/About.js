@@ -1,6 +1,7 @@
 import FadeAnimation from '../Animations/FadeAnimation';
 import AboutSVG from '../Svg/AboutSVG';
 import classes from './About.module.css';
+import Typography from '@material-ui/core/Typography';
 
 const About = (props) => {
   return (
@@ -11,7 +12,7 @@ const About = (props) => {
           <div className={classes.svg}>
             <AboutSVG />
           </div>
-          <p>
+          <Typography variant="body2" component="p">
             If you’re interested in playing around with React, you can use an
             online code playground. Try a Hello World template on CodePen,
             CodeSandbox, or Stackblitz. If you prefer to use your own text
@@ -24,7 +25,7 @@ const About = (props) => {
             slow runtime codecal filesystem in your browser. It does a slow
             runtime code transformation, so we’d only recommend using this for
             simple demos.
-          </p>
+          </Typography>
         </div>
       </div>
     </FadeAnimation>

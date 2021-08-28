@@ -1,3 +1,4 @@
+import { ActionsProvider } from './store/ActionsProvider';
 import { useState } from 'react';
 import classes from './App.module.css';
 import Header from './Components/Layout/Header';
@@ -17,7 +18,7 @@ function App() {
     setShow({ section: section });
   };
   const sections = [
-    { name: 'welcome', title: 'Homepage', component: Welcome },
+    { name: 'welcome', title: 'Introduction', component: Welcome },
     { name: 'about', title: 'About me', component: About },
     { name: 'skills', title: 'Skills', component: Skills },
     { name: 'contact', title: 'Contact me', component: Contact },
@@ -34,10 +35,12 @@ function App() {
   });
   const sectionsData = sections.filter((section) => section.component);
   return (
-    <div className={classes.app}>
-      <Header show={showSectionHandler} sections={sectionsData} />
-      {selectedSection}
-    </div>
+    <ActionsProvider>
+      <div className={classes.app}>
+        <Header show={showSectionHandler} sections={sectionsData} />
+        {selectedSection}
+      </div>
+    </ActionsProvider>
   );
 }
 export default App;

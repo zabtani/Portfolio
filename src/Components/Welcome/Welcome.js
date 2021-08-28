@@ -16,7 +16,7 @@ const Welcome = () => {
         <h1> Hello World</h1>
         <p>
           My name is omer zabtani 👋 <br />
-          and i am looking for a front end developer job.
+          and i am looking for a web developer job.
         </p>
         <WelcomeSVG />
       </div>

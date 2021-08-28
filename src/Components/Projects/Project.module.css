@@ -2,24 +2,39 @@
   width: 67%;
   margin: 2%;
 }
+.project p {
+  font-size: 85%;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+}
 .project .title {
   display: flex;
   justify-content: space-between;
   padding: 0.5%;
   font-weight: bold;
+
   background-color: rgba(131, 131, 131, 0.301);
 }
-
+.project .title h2 {
+  font-size: 120%;
+  font-family: inherit;
+}
+.project .content {
+  padding: 2%;
+}
 .actions {
   display: flex;
   justify-content: space-between;
+  margin-top: 2%;
+}
+.actions button {
+  font-size: 70%;
 }
 .project b {
   color: #3f51b5;
 }
-.actions a {
-  font-weight: bolder;
-}
+
 .title .svgs {
   width: 5rem;
   justify-content: space-between;
@@ -30,15 +45,37 @@
 .title svg {
   margin-left: 3%;
 }
-
+.expandIcon {
+  font-size: 150% !important;
+}
+.featuresButton {
+  font-size: 65% !important;
+  margin: 3% 0 3% 0 !important;
+}
+.project ul {
+  width: 70%;
+  background-color: #d1d1d131;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 100%;
+}
+.project ul .listItemIcon {
+  min-width: auto;
+}
 @media only screen and (max-width: 650px) {
   .title .svgs {
     width: 4rem;
   }
   .project {
     width: 85%;
+    font-size: 80%;
   }
-  .project .title {
-    font-size: 175%;
+  .project .title h2 {
+    font-size: 100%;
+  }
+  .project ul {
+    width: 90%;
   }
 }

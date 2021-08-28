@@ -6,10 +6,14 @@ import GithubSVG from '../../Svg/GithubSVG';
 import LinkedinSVG from '../../Svg/LinkedinSVG';
 import LogoSVG from '../../Svg/LogoSVG';
 import FadeAnimation from '../../Animations/FadeAnimation';
+import { useContext } from 'react';
+import ActionsContext from '../../../store/ActionsProvider';
 const Navbar = (props) => {
+  const actionsDataCtx = useContext(ActionsContext);
   const [isSlideDone, setIsSlideDone] = useState(false);
   const [mobileMenuOpen, setMobileMenu] = useState(false);
   const handleLink = (sectionName) => {
+    actionsDataCtx.reportPage(sectionName);
     if (mobileMenuOpen) {
       setMobileMenu(false);
       setIsSlideDone(false);
@@ -83,6 +87,7 @@ const Navbar = (props) => {
         <FadeAnimation in={isSlideDone || window.screen.width > 650}>
           <ul>
             {sections}
+
             {sideLinks}
           </ul>
         </FadeAnimation>

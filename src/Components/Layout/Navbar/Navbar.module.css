@@ -5,6 +5,7 @@
 .navbar {
   display: flex;
   background: rgb(0, 121, 179);
+
   background: linear-gradient(
     90deg,
     rgba(0, 121, 179, 0.5105392498796393) 1%,
