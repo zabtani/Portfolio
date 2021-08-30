@@ -21,7 +21,7 @@
   font-family: inherit;
 }
 .project .content {
-  padding: 2%;
+  padding: 2.5%;
 }
 .actions {
   display: flex;
@@ -29,7 +29,7 @@
   margin-top: 2%;
 }
 .actions button {
-  font-size: 70%;
+  font-size: 65%;
 }
 .project b {
   color: #3f51b5;

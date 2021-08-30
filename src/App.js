@@ -19,9 +19,9 @@ function App() {
   };
   const sections = [
     { name: 'welcome', title: 'Introduction', component: Welcome },
-    { name: 'about', title: 'About me', component: About },
+    { name: 'about', title: 'Resume', component: About },
     { name: 'skills', title: 'Skills', component: Skills },
-    { name: 'contact', title: 'Contact me', component: Contact },
+    { name: 'contact', title: 'Contact', component: Contact },
     { name: 'projects', title: 'Projects', component: Projects },
   ];
 
