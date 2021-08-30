@@ -3,9 +3,13 @@ import AboutSVG from '../Svg/AboutSVG';
 import classes from './About.module.css';
 import { Button, Typography } from '@material-ui/core/';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import resumePDF from '../../resume.pdf';
+import { useEffect } from 'react';
 const About = (props) => {
+  useEffect(() => {
+    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+  }, []);
   return (
     <FadeAnimation>
       <div className={`${props.className} ${classes.about}`}>
@@ -25,7 +29,7 @@ const About = (props) => {
         </div>
 
         <div className={classes.pdf}>
-          <Document loading="asdasdsa" file={resumePDF}>
+          <Document loading="Loading resume PDF..." file={resumePDF}>
             <form method="get" action={resumePDF}>
               <Button
                 endIcon={<GetAppIcon />}
@@ -36,7 +40,7 @@ const About = (props) => {
                 download PDF
               </Button>
             </form>
-            <Page loading="Loading resume PDF..." pageNumber={1} />
+            <Page pageNumber={1} />
           </Document>
         </div>
       </div>
