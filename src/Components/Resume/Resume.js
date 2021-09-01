@@ -1,23 +1,25 @@
 import FadeAnimation from '../Animations/FadeAnimation';
-import AboutSVG from '../Svg/AboutSVG';
-import classes from './About.module.css';
+import ResumeSVG from '../Svg/ResumeSVG';
+import classes from './Resume.module.css';
 import { Button, Typography } from '@material-ui/core/';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import resumePDF from '../../resume.pdf';
 import { useEffect } from 'react';
-const About = (props) => {
+
+const Resume = (props) => {
   useEffect(() => {
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
   }, []);
+
   return (
     <FadeAnimation>
-      <div className={`${props.className} ${classes.about}`}>
+      <div className={`${props.className} ${classes.resume}`}>
         <h2> Resume </h2>
         <div className={classes.content}>
           <Typography variant="body2" component="p">
             <span className={classes.svg}>
-              <AboutSVG />
+              <ResumeSVG />
             </span>
             Innovative, creative and enthusiastic. great willingness and
             ambition to learn new skills and technologies. hard worker who never
@@ -48,4 +50,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default Resume;

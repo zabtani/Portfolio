@@ -3,7 +3,7 @@ import { useState } from 'react';
 import classes from './App.module.css';
 import Header from './Components/Layout/Header';
 import Welcome from './Components/Welcome/Welcome';
-import About from './Components/About/About';
+import Resume from './Components/Resume/Resume';
 import Skills from './Components/Skills/Skills';
 import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
@@ -19,7 +19,7 @@ function App() {
   };
   const sections = [
     { name: 'welcome', title: 'Introduction', component: Welcome },
-    { name: 'about', title: 'Resume', component: About },
+    { name: 'about', title: 'Resume', component: Resume },
     { name: 'skills', title: 'Skills', component: Skills },
     { name: 'contact', title: 'Contact', component: Contact },
     { name: 'projects', title: 'Projects', component: Projects },

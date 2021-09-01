@@ -1,4 +1,4 @@
-const AboutSVG = (props) => {
+const ResumeSVG = (props) => {
   return (
     <svg
       id="ade8c9af-7e2e-4eda-b5c8-b06129257226"
@@ -228,4 +228,4 @@ const AboutSVG = (props) => {
   );
 };
 
-export default AboutSVG;
+export default ResumeSVG;
