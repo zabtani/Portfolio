@@ -63,6 +63,26 @@ const Projects = (props) => {
       features: [features.hooks, features.async, features.apis,features.mobile],
     },
     {
+      name: 'Protfolio',
+      description: (
+        <span>
+          My web devloper protfolio you are using right now, built with {react}.
+          this smart protfolio includes informative pages about my coding work
+          like skills, about and projects information. the contact page contains
+          a form that send me an email with the applicant information (using
+          emailJS API). the application collect data about the client like
+          projects and pages he visited and send it together with the form to my
+          personal email.
+        </span>
+      ),
+      demoUrl: undefined,
+      sourceUrl: 'https://github.com/zabtani/Protfolio',
+      img: protfolioJPG,
+      techs: ['react', 'html', 'css'],
+      /* prettier-ignore */
+      features: [features.context,features.apis,features.localStorage,features.mui,features.animations,features.mobile],
+    },
+    {
       name: 'Shop App',
       description: (
         <span>
@@ -100,26 +120,6 @@ const Projects = (props) => {
       techs: ['javascript', 'html', 'css'],
       /* prettier-ignore */
       features: [features.mvc, features.jsClasses, features.dom, features.css,features.mobile],
-    },
-    {
-      name: 'Protfolio',
-      description: (
-        <span>
-          My web devloper protfolio you are using right now, built with {react}.
-          this smart protfolio includes informative pages about my coding work
-          like skills, about and projects information. the contact page contains
-          a form that send me an email with the applicant information (using
-          emailJS API). the application collect data about the client like
-          projects and pages he visited and send it together with the form to my
-          personal email.
-        </span>
-      ),
-      demoUrl: undefined,
-      sourceUrl: 'https://github.com/zabtani/Protfolio',
-      img: protfolioJPG,
-      techs: ['react', 'html', 'css'],
-      /* prettier-ignore */
-      features: [features.context,features.apis,features.localStorage,features.mui,features.animations,features.mobile],
     },
   ];
 

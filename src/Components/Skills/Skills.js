@@ -28,7 +28,7 @@ const Skills = (props) => {
   return (
     <FadeAnimation>
       <div className={`${props.className} ${classes.skills}`}>
-        <h2> here is what i do.. </h2>
+        <h2> Here is what i do.. </h2>
         <p>
           Focused on frontend technologies. Javascript, together with HTML and
           CSS. A big fan of React.js as a framework, including the latest
