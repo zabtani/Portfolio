@@ -30,13 +30,15 @@ const Skills = (props) => {
       <div className={`${props.className} ${classes.skills}`}>
         <h2> here is what i do.. </h2>
         <p>
-          Good understanding of javascript, html and css. with working
-          experience on React.js as a framework. basic understanding of server
-          side and how things work with node.js, mongoDb and also PHP.
+          Focused on frontend technologies. Javascript, together with HTML and
+          CSS. A big fan of React.js as a framework, including the latest
+          features like Hooks and Redux. Additionally,I have experienced with
+          the basics of several backend technologies. With an understanding of
+          client/server communication.
         </p>
-        <h3>front end technologies i practice</h3>
+        <h3>Frontend technologies i practice</h3>
         <ul>{techList}</ul>
-        <h3>some tools i use</h3>
+        <h3>Some tools i use</h3>
         <ul>{toolsList}</ul>
       </div>
     </FadeAnimation>
