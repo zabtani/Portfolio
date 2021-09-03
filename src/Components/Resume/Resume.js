@@ -21,12 +21,12 @@ const Resume = (props) => {
             <span className={classes.svg}>
               <ResumeSVG />
             </span>
-            Innovative, creative and enthusiastic. great willingness and
-            ambition to learn new skills and technologies. hard worker who never
-            gets tired. during my stay in Seattle i began to be fascinated by
-            web programming and the world of high tech. i started coding by self
-            learning and courses, and i keep on studying by myself every day.
-            currently looking for my first job as a front end devloper.
+            Innovative, creative and enthusiastic. Great willingness and
+            ambition to learn new skills and technologies. During my stay in
+            Seattle I began to be fascinated by web programming and the world of
+            high tech. I started coding by self learning and courses, and I
+            continue to study on a daily basis. Currently looking for my first
+            job.
           </Typography>
         </div>
 

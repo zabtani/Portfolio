@@ -81,7 +81,7 @@ const Project = (props) => {
   };
 
   return (
-    <FadeAnimation in={imageIsReady}>
+    <FadeAnimation>
       <Card className={classes.project}>
         <CardActionArea>
           <a {...demoLinkProps}>

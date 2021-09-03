@@ -84,7 +84,7 @@ const ContactForm = (props) => {
         {inputs.map((input) => (
           <TextField onChange={validateInput} variant="filled" {...input} />
         ))}
-        {
+        { 
           /* prettier-ignore */ props.onProcess ? <div className={classes.sending}>SENDING...</div> : 
           <Button className={classes.submitButton} type="submit" variant="contained"
           color="primary" disabled={isFormValid ? false : true} >send form </Button>
