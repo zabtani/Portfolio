@@ -43,6 +43,7 @@ const Resume = (props) => {
               </Button>
             </form>
             <Page pageNumber={1} />
+            {console.log(<Page />)}
           </Document>
         </div>
       </div>
