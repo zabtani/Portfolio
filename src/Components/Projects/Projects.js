@@ -49,10 +49,10 @@ const Projects = (props) => {
       description: (
         <span>
           Check IP address application built with {react}. gives information
-          base on provided IP or base on client IP (when first enter if via
-          desktop). provides information of an IP like origin city and
-          country,flag and location on a map. works with several API's like
-          mapbox, ipgeolocation,cloudflare and unsplash.
+          base on provided IP or base on client IP (when first entered).
+          provides information of an IP like origin city and country,flag and
+          location on a map. works with several API's like mapbox,
+          ipgeolocation,cloudflare and unsplash.
         </span>
       ),
       demoUrl: 'https://zabtani.github.io/IP-check/',
@@ -68,11 +68,11 @@ const Projects = (props) => {
         <span>
           My web devloper protfolio you are using right now, built with {react}.
           this smart protfolio includes informative pages about my coding work
-          like skills, about and projects information. the contact page contains
-          a form that send me an email with the applicant information (using
-          emailJS API). the application collect data about the client like
-          projects and pages he visited and send it together with the form to my
-          personal email.
+          like skills, resume and projects information. the contact page
+          contains a form that send me an email with the applicant information
+          (using emailJS API). the application collect data about the client
+          like projects and pages he visited and send it together with the form
+          to my personal email.
         </span>
       ),
       demoUrl: undefined,
