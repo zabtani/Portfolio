@@ -42,8 +42,7 @@ const Resume = (props) => {
                 download PDF
               </Button>
             </form>
-            <Page pageNumber={1} />
-            {console.log(<Page />)}
+            <Page scale={96 / 72} pageNumber={1} />
           </Document>
         </div>
       </div>
