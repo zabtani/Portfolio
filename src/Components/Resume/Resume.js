@@ -6,6 +6,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import resumePDF from '../../resume.pdf';
 import { useEffect } from 'react';
+import Spinner from '../Animations/Spinner';
 
 const Resume = (props) => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Resume = (props) => {
         </div>
 
         <div className={classes.pdf}>
-          <Document loading="Loading resume PDF..." file={resumePDF}>
+          <Document loading={<Spinner />} file={resumePDF}>
             <form method="get" action={resumePDF}>
               <Button
                 endIcon={<GetAppIcon />}
@@ -42,7 +43,7 @@ const Resume = (props) => {
                 download PDF
               </Button>
             </form>
-            <Page scale={96 / 72} pageNumber={1} />
+            <Page loading="" scale={96 / 72} pageNumber={1} />
           </Document>
         </div>
       </div>

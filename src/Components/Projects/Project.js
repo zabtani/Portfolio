@@ -20,6 +20,7 @@ import FadeAnimation from '../Animations/FadeAnimation';
 import { useState } from 'react';
 import { useContext } from 'react';
 import ActionsContext from '../../store/ActionsProvider';
+import Spinner from '../Animations/Spinner';
 
 const Project = (props) => {
   const actionsCtx = useContext(ActionsContext);
@@ -90,7 +91,17 @@ const Project = (props) => {
               <div className={classes.svgs}>{projectTechsSvgs}</div>
             </Typography>
             {/* prettier-ignore */}
-            <CardMedia onLoad={()=>setImageIsReady(true)} component="img" alt={props.name} title={props.name} image={props.img} />
+
+            <CardMedia
+            style={{display:imageIsReady?'block':'none'}}
+                onLoad={() => setImageIsReady(true)}
+                component="img"
+                alt={props.name}
+                title={props.name}
+                image={props.img}
+              />
+
+            {!imageIsReady && <Spinner />}
           </a>
         </CardActionArea>
         <CardContent className={classes.content}>
