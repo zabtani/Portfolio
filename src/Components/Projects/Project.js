@@ -110,7 +110,7 @@ const Project = (props) => {
           </Typography>
           <Button {...featuresButtonProps}>App features</Button>
           <Collapse in={expanded} timeout={80} unmountOnExit>
-            <List className={classes.featuresList}>{projectFeatures}</List>
+            <List>{projectFeatures}</List>
           </Collapse>
         </CardContent>
 
