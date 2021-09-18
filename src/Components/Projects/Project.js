@@ -15,7 +15,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import classes from './Project.module.css';
-import { Reactjs, Html, Js, Css } from '../../Components';
+import { Reactjs, Html, Js, Css, Firebase, Mui } from '../../Components';
 import FadeAnimation from '../Animations/FadeAnimation';
 import { useState } from 'react';
 import { useContext } from 'react';
@@ -27,14 +27,16 @@ const Project = (props) => {
   const [imageIsReady, setImageIsReady] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const techSvgs = {
-    react: <Reactjs key="react" />,
-    html: <Html key="html" />,
-    javascript: <Js key="js" />,
-    css: <Css key="css" />,
+    react: <Reactjs />,
+    html: <Html />,
+    javascript: <Js />,
+    css: <Css />,
+    firebase: <Firebase />,
+    mui: <Mui />,
   };
   const projectTechsSvgs = props.techs.map((tech) => {
     const Svg = techSvgs[tech];
-    return Svg;
+    return <li key={tech}>{Svg}</li>;
   });
   const reportProject = (projectName, linkType) => {
     actionsCtx.reportProject(`${projectName}${linkType}`);
@@ -88,7 +90,7 @@ const Project = (props) => {
           <a {...demoLinkProps}>
             <Typography className={classes.title} component="div">
               <h2> {props.name}</h2>
-              <div className={classes.svgs}>{projectTechsSvgs}</div>
+              <ul className={classes.svgs}>{projectTechsSvgs}</ul>
             </Typography>
             {/* prettier-ignore */}
 

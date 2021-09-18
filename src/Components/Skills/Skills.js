@@ -8,7 +8,8 @@ import {
   Npm,
   Vscode,
   Css,
-  MuiSVG,
+  Mui,
+  Firebase,
 } from '../../Components';
 import React from 'react';
 const Skills = (props) => {
@@ -22,7 +23,7 @@ const Skills = (props) => {
     });
   };
   const techSvgs = [Js, Css, Reactjs, Html];
-  const toolsSvgs = [Npm, Github, Vscode, MuiSVG];
+  const toolsSvgs = [Npm, Github, Vscode, Mui, Firebase];
   const techList = svgListItems(techSvgs);
   const toolsList = svgListItems(toolsSvgs);
   return (

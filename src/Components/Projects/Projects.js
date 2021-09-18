@@ -31,6 +31,22 @@ const Projects = (props) => {
   };
   const projects = [
     {
+      name: 'Wall to all',
+      description: (
+        <span>
+          Social media app built with {react}. allow to make a post and publish
+          it onto a public wall. store data on google fire-base backend service.
+          suggest a photo for the chosen title, or lets the user search for one.
+        </span>
+      ),
+      demoUrl: 'https://zabtani.github.io/Wall/',
+      sourceUrl: 'https://github.com/zabtani/Wall',
+      img: wallJPG,
+      techs: ['react', 'html', 'css', 'firebase', 'mui'],
+      /* prettier-ignore */
+      features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
+    },
+    {
       name: 'Noter App',
       description: (
         <span>
@@ -42,27 +58,11 @@ const Projects = (props) => {
       demoUrl: 'https://zabtani.github.io/Noter/',
       sourceUrl: 'https://github.com/zabtani/Noter',
       img: noterJPG,
-      techs: ['react', 'html', 'css'],
+      techs: ['react', 'html', 'css', 'mui'],
       /* prettier-ignore */
       features: [features.crud,features.context,features.localStorage,features.mui,features.mobile],
     },
-    {
-      name: 'Wall to all',
-      description: (
-        <span>
-          Social media app built with {react}. allow to make a post and publish
-          it onto a public wall. store data on google fire-base backend service.
-          suggest a photo for the choosen title, or lets the user search for
-          one.
-        </span>
-      ),
-      demoUrl: 'https://zabtani.github.io/Wall/',
-      sourceUrl: 'https://github.com/zabtani/Wall',
-      img: wallJPG,
-      techs: ['react', 'html', 'css'],
-      /* prettier-ignore */
-      features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
-    },
+
     {
       name: 'IP check',
       description: (
@@ -97,7 +97,7 @@ const Projects = (props) => {
       demoUrl: undefined,
       sourceUrl: 'https://github.com/zabtani/Protfolio',
       img: protfolioJPG,
-      techs: ['react', 'html', 'css'],
+      techs: ['react', 'html', 'css', 'mui'],
       /* prettier-ignore */
       features: [features.context,features.apis,features.localStorage,features.mui,features.animations,features.mobile],
     },

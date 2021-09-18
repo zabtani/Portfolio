@@ -1,9 +1,9 @@
 .project {
-  width: 67%;
+  width: 55%;
   margin: 2%;
 }
 .project p {
-  font-size: 160%;
+  font-size: 120%;
   padding: 0;
   margin: auto;
   width: 100%;
@@ -34,15 +34,19 @@
 .project b {
   color: #3f51b5;
 }
-
 .title .svgs {
-  width: 5rem;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
   justify-content: space-between;
   display: flex;
+  flex-direction: row;
   line-height: 110%;
   align-self: center;
 }
-.title svg {
+.title .svgs li {
+  width: 5vh;
+  height: 5vh;
   margin-left: 3%;
 }
 .expandIcon {
