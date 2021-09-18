@@ -31,12 +31,12 @@
 }
 
 .navbar ul li button {
-  font-size: 1rem;
+  font-size: 160%;
   width: max-content;
   height: 100%;
   background-color: transparent;
   border: none;
-  padding: 8px;
+  padding: 0 15px 0 15px;
 }
 
 .navbar ul li:hover {

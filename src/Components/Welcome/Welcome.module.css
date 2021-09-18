@@ -19,7 +19,7 @@
     rgba(146, 141, 231, 0.1548249641653537) 0%,
     rgba(0, 212, 255, 0.14807426388524154) 100%
   );
-  width: 50%;
+  width: fit-content;
   padding: 1%;
   box-shadow: rgb(0, 128, 145, 0.27) 0px 5px 15px;
   border-radius: 15px;

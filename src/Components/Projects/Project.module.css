@@ -3,7 +3,7 @@
   margin: 2%;
 }
 .project p {
-  font-size: 85%;
+  font-size: 160%;
   padding: 0;
   margin: auto;
   width: 100%;
@@ -70,7 +70,7 @@
   }
   .project {
     width: 85%;
-    font-size: 80%;
+    font-size: 50%;
   }
   .project .title h2 {
     font-size: 100%;

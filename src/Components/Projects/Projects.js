@@ -5,6 +5,7 @@ import {
   colorsGameJPG,
   ipcheckJPG,
   protfolioJPG,
+  wallJPG,
 } from '../../Components';
 
 import Project from './Project';
@@ -26,6 +27,7 @@ const Projects = (props) => {
     mvc: 'MVC pattern',
     animations: 'Animations',
     mobile: 'mobile responsive design',
+    backend: 'Works with backend',
   };
   const projects = [
     {
@@ -43,6 +45,23 @@ const Projects = (props) => {
       techs: ['react', 'html', 'css'],
       /* prettier-ignore */
       features: [features.crud,features.context,features.localStorage,features.mui,features.mobile],
+    },
+    {
+      name: 'Wall to all',
+      description: (
+        <span>
+          Social media app built with {react}. allow to make a post and publish
+          it onto a public wall. store data on google fire-base backend service.
+          suggest a photo for the choosen title, or lets the user search for
+          one.
+        </span>
+      ),
+      demoUrl: 'https://zabtani.github.io/Wall/',
+      sourceUrl: 'https://github.com/zabtani/Wall',
+      img: wallJPG,
+      techs: ['react', 'html', 'css'],
+      /* prettier-ignore */
+      features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
     },
     {
       name: 'IP check',

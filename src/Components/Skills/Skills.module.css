@@ -1,7 +1,7 @@
 .skills ul {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: fit-content;
   border-radius: 8px;
   padding: 0;
   margin: auto auto 5% auto;
@@ -10,8 +10,8 @@
 }
 .skills ul li {
   margin: 1%;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 20vh;
+  width: 20vh;
   padding: 1%;
 }
 
