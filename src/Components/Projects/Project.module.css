@@ -47,7 +47,7 @@
 .title .svgs li {
   width: 5vh;
   height: 5vh;
-  margin-left: 3%;
+  margin: 0 3% 0 3%;
 }
 .expandIcon {
   font-size: 150% !important;
@@ -71,14 +71,15 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .title .svgs {
-    width: 4rem;
-  }
   .project {
     width: 85%;
     font-size: 50%;
   }
+  .project p {
+    font-size: 150%;
+  }
   .project .title h2 {
+    align-self: center;
     font-size: 100%;
   }
   .project ul {

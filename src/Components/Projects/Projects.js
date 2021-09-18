@@ -31,7 +31,7 @@ const Projects = (props) => {
   };
   const projects = [
     {
-      name: 'Wall to all',
+      name: 'Wall',
       description: (
         <span>
           Social media app built with {react}. allow to make a post and publish
@@ -47,7 +47,7 @@ const Projects = (props) => {
       features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
     },
     {
-      name: 'Noter App',
+      name: 'Noter',
       description: (
         <span>
           Notes application built with {react}. allow to add dynamic labels and
@@ -64,7 +64,7 @@ const Projects = (props) => {
     },
 
     {
-      name: 'IP check',
+      name: 'IP-check',
       description: (
         <span>
           Check IP address application built with {react}. gives information
@@ -102,7 +102,7 @@ const Projects = (props) => {
       features: [features.context,features.apis,features.localStorage,features.mui,features.animations,features.mobile],
     },
     {
-      name: 'Shop App',
+      name: 'Shop',
       description: (
         <span>
           Shop application built with {plainJs}. this ecommerce website
@@ -123,7 +123,7 @@ const Projects = (props) => {
       ],
     },
     {
-      name: 'Colors game',
+      name: 'Colors-game',
       description: (
         <span>
           Colors memory game built with {plainJs}. after name and optional
