@@ -31,7 +31,9 @@
 }
 
 .navbar ul li button {
-  font-size: 160%;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 900;
+  font-size: 3vh;
   width: max-content;
   height: 100%;
   background-color: transparent;
@@ -117,10 +119,7 @@
       rgba(149, 149, 149, 0.2) 100%
     );
   }
-  .navbar nav ul li button {
-    font-size: 180%;
-    width: 100%;
-  }
+
   .navbar nav ul .sidelinks li {
     margin: auto;
     width: 3rem;
