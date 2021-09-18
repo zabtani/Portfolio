@@ -117,7 +117,7 @@
     );
   }
   .navbar nav ul li button {
-    font-size: 1.3rem;
+    font-size: 150%;
     width: 100%;
   }
   .navbar nav ul .sidelinks li {
