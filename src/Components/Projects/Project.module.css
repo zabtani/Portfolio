@@ -13,11 +13,12 @@
   justify-content: space-between;
   padding: 0.5%;
   font-weight: bold;
-
   background-color: rgba(131, 131, 131, 0.301);
 }
 .project .title h2 {
-  font-size: 120%;
+  text-align: left;
+  width: 100%;
+  font-size: 4vh;
   font-family: inherit;
 }
 .project .content {
@@ -35,19 +36,23 @@
   color: #3f51b5;
 }
 .title .svgs {
+  height: 100%;
   width: fit-content;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
   display: flex;
   flex-direction: row;
   line-height: 110%;
   align-self: center;
 }
 .title .svgs li {
-  width: 5vh;
-  height: 5vh;
-  margin: 0 3% 0 3%;
+  width: 9%;
+  margin: 0 1% 0 1%;
+}
+.title svg {
+  width: 100%;
+  height: 100%;
 }
 .expandIcon {
   font-size: 150% !important;
@@ -76,14 +81,17 @@
     font-size: 50%;
   }
   .project p {
-    font-size: 150%;
+    font-size: 180%;
   }
   .project .title h2 {
-    align-self: center;
     font-size: 100%;
   }
   .project ul {
     width: 90%;
     font-size: 160%;
+  }
+  .title .svgs li {
+    width: 15%;
+    margin: 0 1% 0 1%;
   }
 }
