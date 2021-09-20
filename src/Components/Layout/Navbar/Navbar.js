@@ -12,6 +12,7 @@ const Navbar = (props) => {
   const actionsDataCtx = useContext(ActionsContext);
   const [isSlideDone, setIsSlideDone] = useState(false);
   const [mobileMenuOpen, setMobileMenu] = useState(false);
+
   const handleLink = (sectionName) => {
     actionsDataCtx.reportPage(sectionName);
     if (mobileMenuOpen) {
@@ -84,7 +85,7 @@ const Navbar = (props) => {
       <nav>
         {menuIcon}
         {logo}
-        <FadeAnimation in={isSlideDone || window.screen.width > 650}>
+        <FadeAnimation in={isSlideDone || !mobileMenuOpen}>
           <ul>
             {sections}
 
