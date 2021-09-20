@@ -1,7 +1,7 @@
 import Fade from '@material-ui/core/Fade/';
 const FadeAnimation = (props) => {
   return (
-    <Fade in={props.in === false ? false : true} timeout={{ enter: 1750 }}>
+    <Fade in={props.in === false ? false : true} timeout={{ enter: 650 }}>
       {props.children}
     </Fade>
   );
