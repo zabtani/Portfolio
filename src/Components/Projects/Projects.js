@@ -142,18 +142,19 @@ const Projects = (props) => {
     },
   ];
 
-  return (
-    <FadeAnimation>
-      <div className={props.className}>
-        <h2>My Projects</h2>
-        <div className={classes.projectsContainer}>
-          {projects.map((project, idx) => {
-            return <Project key={`${project.name}${idx}`} {...project} />;
-          })}
-        </div>
-      </div>
-    </FadeAnimation>
-  );
+  return <div>working on updates</div>;
 };
 
 export default Projects;
+{
+  /* <FadeAnimation>
+<div className={props.className}>
+  <h2>My Projects</h2>
+  <div className={classes.projectsContainer}>
+    {projects.map((project, idx) => {
+      return <Project key={`${project.name}${idx}`} {...project} />;
+    })}
+  </div>
+</div>
+</FadeAnimation> */
+}
