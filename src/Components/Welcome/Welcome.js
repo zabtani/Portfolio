@@ -15,7 +15,7 @@ const Welcome = () => {
       <div className={classes.welcome}>
         <h1> Hello World</h1>
         <p>
-          My name is Omer Zabtani 👋 <br />
+          My name is Omer zabtani 👋 <br />
           and i am looking for a web developer job.
         </p>
         <WelcomeSVG />
