@@ -6,6 +6,7 @@ import {
   ipcheckJPG,
   protfolioJPG,
   wallJPG,
+  snakeJPG,
 } from '../../Components';
 
 import Project from './Project';
@@ -34,9 +35,10 @@ const Projects = (props) => {
       name: 'Wall',
       description: (
         <span>
-          Social media app built with {react}. allow to make a post and publish
-          it onto a public wall. store data on google fire-base backend service.
-          suggest a photo for the chosen title, or lets the user search for one.
+          Social media app built with {react}. User can make a post and publish
+          it onto a public wall. Suggest a photo for the chosen title, or lets
+          the user search for one. Stores data on google firebase backend
+          service.
         </span>
       ),
       demoUrl: 'https://zabtani.github.io/Wall/',
@@ -47,11 +49,28 @@ const Projects = (props) => {
       features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
     },
     {
+      name: 'Snake',
+      description: (
+        <span>
+          Old school snake game built with {react}. snake is picking apples and
+          grow, game is over when the snake touch its own body.thin application
+          that practice react hooks and state management. not responsive for
+          mobile.
+        </span>
+      ),
+      demoUrl: 'https://zabtani.github.io/Snake/',
+      sourceUrl: 'https://github.com/zabtani/Snake',
+      img: snakeJPG,
+      techs: ['react', 'html', 'css'],
+      /* prettier-ignore */
+      features: [features.hooks,features.css],
+    },
+    {
       name: 'Noter',
       description: (
         <span>
-          Notes application built with {react}. allow to add dynamic labels and
-          notes base on them. includes active/completed note list distribution,
+          Notes application built with {react}. User can add dynamic labels and
+          notes base on them. Includes active/completed notes list distribution,
           with a filter feature for each list.
         </span>
       ),
@@ -67,9 +86,9 @@ const Projects = (props) => {
       name: 'IP-check',
       description: (
         <span>
-          Check IP address application built with {react}. gives information
+          Check IP address application built with {react}. Gives information
           base on provided IP or base on client IP (when first entered).
-          provides information of an IP like origin city and country,flag and
+          Provides information of an IP like origin city and country,flag and
           location on a map. works with several API's like mapbox,
           ipgeolocation,cloudflare and unsplash.
         </span>
@@ -86,12 +105,12 @@ const Projects = (props) => {
       description: (
         <span>
           My web devloper protfolio you are using right now, built with {react}.
-          this smart protfolio includes informative pages about my coding work
-          like skills, resume and projects information. the contact page
-          contains a form that send me an email with the applicant information
-          (using emailJS API). the application collect data about the client
-          like projects and pages he visited and send it together with the form
-          to my personal email.
+          This protfolio includes informative pages about my coding work like
+          skills, resume and projects information. The contact page contains a
+          form that send me an email with the applicant information (using
+          emailJS API). The application collect data about the client like
+          projects and pages he visited and send it together with the form to my
+          personal email.
         </span>
       ),
       demoUrl: undefined,
@@ -105,9 +124,9 @@ const Projects = (props) => {
       name: 'Shop',
       description: (
         <span>
-          Shop application built with {plainJs}. this ecommerce website
+          Shop application built with {plainJs}. This ecommerce website
           generates dynamic catigories like prices,discounts,geners and brands
-          base on the data provided to the app. includes search bar,business
+          base on the data provided to the app. Includes search bar,business
           information pages and cart features.
         </span>
       ),
@@ -126,11 +145,11 @@ const Projects = (props) => {
       name: 'Colors-game',
       description: (
         <span>
-          Colors memory game built with {plainJs}. after name and optional
-          colors to memorize has been chosen,game generates new level with some
-          random colors snapshots for limited time. user should recall which
-          color was where.levels get harder by adding more colors to recall.
-          includes recoreds table.
+          Colors memory game built with {plainJs}. User can choose player name
+          and optional colors to memorize. Then, the game generates new level
+          with some random colors snapshots for limited time. Player should
+          recall which color was where. Levels gets harder by adding more colors
+          to recall. Includes recoreds table, stores data in localStorage.
         </span>
       ),
       demoUrl: 'https://zabtani.github.io/Colors-game/',

@@ -15,3 +15,4 @@ export { default as ipcheckJPG } from '../images/ipcheck.jpg';
 export { default as protfolioJPG } from '../images/protfolio.jpg';
 export { default as shopJPG } from '../images/shop.jpg';
 export { default as wallJPG } from '../images/wall.jpg';
+export { default as snakeJPG } from '../images/snake.jpg';
