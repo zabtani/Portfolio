@@ -88,7 +88,6 @@ const Navbar = (props) => {
         <FadeAnimation in={isSlideDone || !mobileMenuOpen}>
           <ul>
             {sections}
-
             {sideLinks}
           </ul>
         </FadeAnimation>

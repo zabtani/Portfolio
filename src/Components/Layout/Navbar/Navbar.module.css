@@ -5,7 +5,6 @@
 .navbar {
   display: flex;
   background: rgb(0, 121, 179);
-
   background: linear-gradient(
     90deg,
     rgba(0, 121, 179, 0.5105392498796393) 1%,
@@ -23,7 +22,9 @@
 }
 
 .navbar ul .sidelinks {
+  width: fit-content;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .logo:hover {
@@ -31,13 +32,12 @@
 }
 
 .navbar ul li button {
-  font-weight: 900;
   font-size: 3vh;
   width: 100%;
   height: 100%;
   background-color: transparent;
   border: none;
-  padding: 0 15px 0 15px;
+  padding: 0 25px 0 25px;
 }
 
 .navbar ul li:hover {
@@ -136,6 +136,7 @@
   }
   .navbar nav ul .sidelinks li {
     padding: 2%;
+    margin: 2%;
   }
   .navbar nav ul .sidelinks {
     margin-top: 10%;
