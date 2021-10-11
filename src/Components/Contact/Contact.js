@@ -74,7 +74,7 @@ const Contact = (props) => {
           <span> Fill form below and i will get back to you. </span>}
           you can also contact me via <b>zabtani@gmail.com,</b> phone number <b>0525206108</b> or my
           <b className={classes.link}><a href={linkedinLink}> Linkden </a></b> account.
-          </Typography>
+        </Typography>
         {!status.sent && !status.error && form}
         {(status.error || status.sent) && restartButton}
       </div>
