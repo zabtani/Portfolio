@@ -27,8 +27,9 @@ const Projects = (props) => {
     css: 'Vanilla CSS',
     mvc: 'MVC pattern',
     animations: 'Animations',
-    mobile: 'mobile responsive design',
+    mobile: 'Mobile responsive design',
     backend: 'Works with backend',
+    httpHook: 'Custom Http Hook',
   };
   const projects = [
     {
@@ -46,7 +47,7 @@ const Projects = (props) => {
       img: wallJPG,
       techs: ['react', 'html', 'css', 'firebase', 'mui'],
       /* prettier-ignore */
-      features: [features.backend,features.async, features.apis ,features.mui,features.mobile],
+      features: [features.backend,features.async, features.apis ,features.httpHook,features.mui,features.mobile],
     },
     {
       name: 'Snake',
