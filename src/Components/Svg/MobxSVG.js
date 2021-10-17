@@ -2,7 +2,7 @@ const MobxSVG = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="-20 -25 300 300"
+      viewBox="-14 -18 280 280"
       preserveAspectRatio="xMidYMid"
     >
       <path
