@@ -10,6 +10,9 @@ import {
   Css,
   Mui,
   Firebase,
+  Mobx,
+  Redux,
+  Typescript,
 } from '../../Components';
 import React from 'react';
 const Skills = (props) => {
@@ -22,7 +25,7 @@ const Skills = (props) => {
       );
     });
   };
-  const techSvgs = [Js, Css, Reactjs, Html];
+  const techSvgs = [Js, Css, Reactjs, Html, Typescript, Mobx, Redux];
   const toolsSvgs = [Npm, Github, Vscode, Mui, Firebase];
   const techList = svgListItems(techSvgs);
   const toolsList = svgListItems(toolsSvgs);
@@ -32,10 +35,10 @@ const Skills = (props) => {
         <h2> Here is what i do.. </h2>
         <p>
           Focused on frontend technologies. Javascript, together with HTML and
-          CSS. A big fan of React.js as a framework, including the latest
-          features like Hooks and Redux. Additionally,I have experienced with
-          the basics of several backend technologies. With an understanding of
-          client/server communication.
+          CSS.work with TypeScript. A big fan of React.js as a framework,
+          including features like Hooks,Redux,Mobx and more. Additionally,I have
+          experienced with the basics of several backend technologies. With an
+          understanding of client/server communication.
         </p>
         <h3>Frontend technologies i practice</h3>
         <ul>{techList}</ul>

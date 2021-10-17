@@ -7,6 +7,9 @@ export { default as Npm } from './Svg/NpmSVG';
 export { default as Github } from './Svg/GithubSVG';
 export { default as Vscode } from './Svg/VscodeSVG';
 export { default as Mui } from './Svg/MuiSVG';
+export { default as Typescript } from './Svg/TypescriptSVG';
+export { default as Mobx } from './Svg/MobxSVG';
+export { default as Redux } from './Svg/ReduxSVG';
 export { default as Firebase } from './Svg/FirebaseSVG';
 //export imgs:
 export { default as noterJPG } from '../images/noter.jpg';
