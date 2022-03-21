@@ -5,6 +5,7 @@ export { default as Js } from './Svg/JsSVG';
 export { default as Reactjs } from './Svg/ReactSVG';
 export { default as Npm } from './Svg/NpmSVG';
 export { default as Github } from './Svg/GithubSVG';
+export { default as Git } from './Svg/GitSVG';
 export { default as Vscode } from './Svg/VscodeSVG';
 export { default as Mui } from './Svg/MuiSVG';
 export { default as Typescript } from './Svg/TypescriptSVG';

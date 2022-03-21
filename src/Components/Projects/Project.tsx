@@ -15,44 +15,50 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import classes from './Project.module.css';
-import { Reactjs, Html, Js, Css, Firebase, Mui } from '../../Components';
 import FadeAnimation from '../Animations/FadeAnimation';
 import { useState } from 'react';
 import { useContext } from 'react';
 import ActionsContext from '../../store/ActionsProvider';
 import Spinner from '../Animations/Spinner';
+import { ProjectData } from '../../interface/Projects';
+import Features from '../../enums/Features';
+import { svgListItems } from '../../utils';
+import { TECHS_SVGS, TOOLS_SVGS } from '../../globals';
 
-const Project = (props) => {
+const Project = ({
+  name,
+  sourceUrl,
+  features,
+  techs,
+  tools,
+  demoUrl,
+  description,
+  img,
+}: ProjectData) => {
   const actionsCtx = useContext(ActionsContext);
   const [imageIsReady, setImageIsReady] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const techSvgs = {
-    react: <Reactjs />,
-    html: <Html />,
-    javascript: <Js />,
-    css: <Css />,
-    firebase: <Firebase />,
-    mui: <Mui />,
-  };
-  const projectTechsSvgs = props.techs.map((tech) => {
-    const Svg = techSvgs[tech];
-    return <li key={tech}>{Svg}</li>;
-  });
-  const reportProject = (projectName, linkType) => {
+  const t = tools.map((tool) => [tool, TOOLS_SVGS[tool]]);
+  const r = techs.map((tech) => [tech, TECHS_SVGS[tech]]);
+  const techsArr = [...t, ...r];
+  console.log(techsArr);
+  const techsSvgs = Object.fromEntries(techsArr);
+  const projectTechsSvgs = svgListItems(techsSvgs);
+  const reportProject = (projectName: string, linkType: string) => {
     actionsCtx.reportProject(`${projectName}${linkType}`);
   };
   const reportDemo = () => {
-    reportProject(props.name, '(demo)');
+    reportProject(name, '(demo)');
   };
   const reportSource = () => {
-    reportProject(props.name, '(source code)');
+    reportProject(name, '(source code)');
   };
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
-  const linkButtonProps = { variant: 'contained', color: 'primary' };
-  const projectFeatures = props.features.map((feature, idx) => (
+  const linkButtonProps = { variant: 'contained', color: 'primary' } as {};
+  const projectFeatures = features.map((feature: Features, idx: number) => (
     <ListItem key={idx}>
       <ListItemIcon className={classes.listItemIcon}>
         <KeyboardArrowRightIcon />
@@ -68,20 +74,20 @@ const Project = (props) => {
   const demoLinkProps = {
     onClick: reportDemo,
     onAuxClick: reportDemo,
-    href: props.demoUrl,
-  };
+    href: demoUrl,
+  } as {};
   const sourceLinkProps = {
     onClick: reportSource,
     onAuxClick: reportSource,
-    href: props.sourceUrl,
-  };
+    href: sourceUrl,
+  } as {};
   const featuresButtonProps = {
     color: 'primary',
     variant: 'outlined',
     onClick: handleExpandClick,
     endIcon: featuresIcon,
     className: classes.featuresButton,
-  };
+  } as {};
 
   return (
     <FadeAnimation>
@@ -89,7 +95,7 @@ const Project = (props) => {
         <CardActionArea>
           <a {...demoLinkProps}>
             <Typography className={classes.title} component="div">
-              <h2> {props.name}</h2>
+              <h2> {name}</h2>
               <ul className={classes.svgs}>{projectTechsSvgs}</ul>
             </Typography>
             {/* prettier-ignore */}
@@ -98,9 +104,9 @@ const Project = (props) => {
             style={{display:imageIsReady?'block':'none'}}
                 onLoad={() => setImageIsReady(true)}
                 component="img"
-                alt={props.name}
-                title={props.name}
-                image={props.img}
+                alt={name}
+                title={name}
+                image={img}
               />
 
             {!imageIsReady && <Spinner />}
@@ -108,7 +114,7 @@ const Project = (props) => {
         </CardActionArea>
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p">
-            {props.description}
+            {description}
           </Typography>
           <Button {...featuresButtonProps}>App features</Button>
           <Collapse in={expanded} timeout={80} unmountOnExit>
@@ -120,7 +126,7 @@ const Project = (props) => {
           <Button {...linkButtonProps}>
             <a {...sourceLinkProps}>view code</a>
           </Button>
-          {props.demoUrl && (
+          {demoUrl && (
             <Button {...linkButtonProps}>
               <a {...demoLinkProps}>launch demo</a>
             </Button>

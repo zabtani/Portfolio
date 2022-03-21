@@ -5,15 +5,18 @@ import { emailjsAPI } from '../../apiconfig.js';
 import { Button, Typography } from '@material-ui/core/';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import FadeAnimation from '../Animations/FadeAnimation';
 import ContactForm from './ContactForm';
 import ActionsContext from '../../store/ActionsProvider';
-
-const Contact = (props) => {
+import { ContactStatus } from '../../interface/Context';
+import { SectionProps } from '../../interface/Sections';
+const Contact = ({ className }: SectionProps) => {
   const actionsCtx = useContext(ActionsContext);
-  const [status, setStatus] = useState({ ...actionsCtx.contactStatus });
-  const changeStatus = (update) => {
+  const [status, setStatus] = useState<ContactStatus>({
+    ...actionsCtx.contactStatus,
+  });
+  const changeStatus = (update: Partial<ContactStatus>) => {
     actionsCtx.reportContactStatus(update);
     setStatus((prevStatus) => {
       return {
@@ -23,10 +26,10 @@ const Contact = (props) => {
     });
   };
 
-  useState(() => {
+  useEffect(() => {
     init(emailjsAPI.apiKey);
   }, []);
-  const sendEmail = async (e) => {
+  const sendEmail = async (e: any) => {
     changeStatus({ pending: true });
     e.preventDefault();
     try {
@@ -66,7 +69,7 @@ const Contact = (props) => {
   const linkedinLink = 'https://linkedin.com/in/omer-zabtani-b09543155';
   return (
     <FadeAnimation>
-      <div className={`${props.className} ${classes.contact}`}>
+      <div className={`${className} ${classes.contact}`}>
         <h2> Contact</h2>
         {/* prettier-ignore */}
         <Typography variant="body2" component="p">

@@ -1,17 +1,17 @@
-.welcome {
+.Home {
   width: 100vw;
   display: flex;
   flex-direction: column;
   height: 90vh;
   align-content: space-around;
-  background-color: #fff5eb;
+  /* background-color: #fff5eb; */
 }
-.welcome h2 {
+.Home h2 {
   font-size: 2rem;
   margin: 1%;
 }
 
-.welcome p {
+.Home p {
   font-size: 1.2rem;
   background: rgb(0, 128, 145);
   background: linear-gradient(
@@ -26,19 +26,19 @@
   margin: auto;
 }
 @media only screen and (max-width: 650px) {
-  .welcome p {
+  .Home p {
     padding: 3%;
     width: 80%;
     font-size: 1.2rem;
   }
-  .welcome h1 {
+  .Home h1 {
     font-size: 3rem;
   }
-  .welcome h2 {
+  .Home h2 {
     font-size: 1.5rem;
     margin: auto;
   }
-  .welcome svg {
+  .Home svg {
     height: 40%;
   }
 }

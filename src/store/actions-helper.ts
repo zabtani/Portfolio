@@ -1,11 +1,13 @@
-export const setLocalStorage = (key, value) => {
+import { UserActions } from '../interface/Context';
+
+export const setLocalStorage = (key: string, value: UserActions) => {
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
-  } catch (e) {
+  } catch (e: any) {
     throw new Error(e);
   }
 };
-const getLocalStorage = (key, initialValue) => {
+const getLocalStorage = (key: string, initialValue: UserActions) => {
   try {
     const value = window.localStorage.getItem(key);
     return value ? JSON.parse(value) : initialValue;
@@ -13,7 +15,7 @@ const getLocalStorage = (key, initialValue) => {
     return initialValue;
   }
 };
-export const parseDataArr = (data) => {
+export const parseDataArr = (data: string[] | string) => {
   let parsedData;
   if (data.length === 0) {
     parsedData = 'seen nothing';
@@ -24,7 +26,7 @@ export const parseDataArr = (data) => {
   }
   return parsedData;
 };
-const defaultActionsState = {
+const defaultActionsState: UserActions = {
   projects: [],
   pages: [],
 };

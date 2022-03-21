@@ -1,9 +1,9 @@
-import classes from './Welcome.module.css';
+import classes from './Home.module.css';
 import WelcomeSVG from '../Svg/WelcomeSVG';
 import ZoomAnimation from '../Animations/ZoomAnimation';
 import { useEffect, useState } from 'react';
 
-const Welcome = () => {
+const Home = () => {
   const [fontIsReady, setFontIsReady] = useState(false);
   useEffect(() => {
     document.fonts.ready.then(
@@ -12,7 +12,7 @@ const Welcome = () => {
   }, []);
   return (
     <ZoomAnimation in={fontIsReady}>
-      <div className={classes.welcome}>
+      <div className={classes.Home}>
         <h1> Hello World</h1>
         <p>
           My name is Omer Zabtani 👋 <br />
@@ -24,4 +24,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Home;

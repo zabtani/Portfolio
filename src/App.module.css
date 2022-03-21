@@ -2,10 +2,10 @@
   text-align: center;
 }
 .section {
-  background-color: #d1d1d169;
+  background-color: #cccccc5e;
+  border-radius: 1rem;
   margin: 2.5% auto 2.5% auto;
   width: 90%;
-  height: fit-content;
   padding: 0.5%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

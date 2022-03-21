@@ -7,6 +7,7 @@ import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import resumePDF from '../../resume.pdf';
 import { useEffect } from 'react';
 import Spinner from '../Animations/Spinner';
+import { RESUME_SUMMARY } from '../../globals';
 
 const Resume = (props) => {
   useEffect(() => {
@@ -22,12 +23,7 @@ const Resume = (props) => {
             <span className={classes.svg}>
               <ResumeSVG />
             </span>
-            Innovative, creative and enthusiastic. Great willingness and
-            ambition to learn new skills and technologies. During my stay in
-            Seattle I began to be fascinated by web programming and the world of
-            high tech. I started coding by self learning and courses, and I
-            continue to study on a daily basis. Currently looking for my first
-            job.
+            {RESUME_SUMMARY}
           </Typography>
         </div>
 

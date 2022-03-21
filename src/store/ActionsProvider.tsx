@@ -1,11 +1,13 @@
 import { useEffect, useReducer } from 'react';
+import { ActionsContextProps, ContactStatus } from '../interface/Context';
+
 import ActionsContext from './actions-context';
 import {
   setLocalStorage,
   initialActionsState,
   parseDataArr,
 } from './actions-helper';
-function actionsReducer(state, action) {
+function actionsReducer(state: any, action: { type: string; value: any }) {
   if (action.type === 'REPORT_CONTACT_STATUS') {
     let changedStatus = action.value;
     return {
@@ -13,7 +15,7 @@ function actionsReducer(state, action) {
       contactStatus: { ...state.contactStatus, ...changedStatus },
     };
   } else {
-    let key;
+    let key: string;
     let reporetedValue = action.value;
     switch (action.type) {
       case 'REPORT_PAGE':
@@ -32,7 +34,7 @@ function actionsReducer(state, action) {
   }
 }
 
-export const ActionsProvider = (props) => {
+export const ActionsProvider = (props: any) => {
   const [actionsState, dispatchActions] = useReducer(actionsReducer, {
     ...initialActionsState,
     contactStatus: { error: false, sent: false, pending: false },
@@ -44,7 +46,7 @@ export const ActionsProvider = (props) => {
     });
   }, [actionsState.projects, actionsState.pages]);
 
-  const reportPageHandler = (pageName) => {
+  const reportPageHandler = (pageName: string) => {
     if (
       actionsState.pages.includes(pageName) ||
       pageName === 'welcome' ||
@@ -53,14 +55,14 @@ export const ActionsProvider = (props) => {
       return;
     dispatchActions({ type: 'REPORT_PAGE', value: pageName });
   };
-  const reportProjectHandler = (projectName) => {
+  const reportProjectHandler = (projectName: string) => {
     if (actionsState.projects.includes(projectName)) return;
     dispatchActions({ type: 'REPORT_PROJECT', value: projectName });
   };
-  const reportContactStatusHandler = (status) => {
+  const reportContactStatusHandler = (status: ContactStatus) => {
     dispatchActions({ type: 'REPORT_CONTACT_STATUS', value: status });
   };
-  const actionsContext = {
+  const actionsContext: ActionsContextProps = {
     visitedPages: parseDataArr(actionsState.pages),
     visitedProjects: parseDataArr(actionsState.projects),
     contactStatus: actionsState.contactStatus,
