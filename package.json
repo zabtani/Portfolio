@@ -1,6 +1,6 @@
 {
-  "homepage": "http://zabtani.github.io/Protfolio",
-  "name": "protfolio-page",
+  "homepage": "http://zabtani.github.io/Portfolio",
+  "name": "portfolio-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -5,10 +5,14 @@ import Resume from './Components/Resume/Resume';
 import Skills from './Components/Skills/Skills';
 import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom';
 import Paths from './enums/Paths';
 import Layout from './Components/Layout/Layout';
-import { useEffect, useRef } from 'react';
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
@@ -23,6 +27,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Layout />}>
+              <Route path={'/'} element={<Navigate to={Paths.HOME} />} />
               <Route path={Paths.HOME} element={<Home />} />
               <Route path={Paths.ABOUT} element={<Resume {...cls} />} />
               <Route path={Paths.CONTACT} element={<Contact {...cls} />} />

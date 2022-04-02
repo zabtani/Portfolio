@@ -7,9 +7,10 @@ import {
   shopJPG,
   colorsGameJPG,
   ipcheckJPG,
-  protfolioJPG,
+  portfolioJPG,
   wallJPG,
   snakeJPG,
+  forecastJPG,
   Reactjs,
   Html,
   Js,
@@ -62,7 +63,28 @@ export const RESUME_SUMMARY = (
 //projects data
 const react = <b>React</b>;
 const plainJs = <b>Plain JavaScript</b>;
+const typescript = <b>Typescript</b>;
 export const PROJECTS: ProjectData[] = [
+  {
+    name: 'Forecast',
+    description: (
+      <span>
+        Weather forecast app built with {react} and {typescript}. initially the
+        app present's user city's forecast base on the geolocation. then user
+        can also search for city (and get suggestions).The app generates the
+        location forecast (includes 5 days forecast and more information). user
+        can choose between celsius/fahrenheit units, add location to favorites,
+        and toggle between dark/light mode.
+      </span>
+    ),
+    demoUrl: 'https://zabtani.github.io/weather-forecast',
+    sourceUrl: 'https://github.com/zabtani/weather-forecast/tree/master',
+    img: forecastJPG,
+    techs: [Techs.REACT, Techs.HTML, Techs.REDUX, Techs.TS, Techs.CSS3],
+    tools: [Tools.MUI],
+    /* prettier-ignore */
+    features: [Features.APIS,Features.ASYNC, Features.APIS ,Features.ASYNC_THUNKS,Features.MUI,Features.MOBILE],
+  },
   {
     name: 'Wall',
     description: (
@@ -137,11 +159,11 @@ export const PROJECTS: ProjectData[] = [
     features: [Features.HOOKS, Features.ASYNC, Features.APIS,Features.MOBILE],
   },
   {
-    name: 'Protfolio',
+    name: 'Portfolio',
     description: (
       <span>
-        My web devloper protfolio you are using right now, built with {react}.
-        This protfolio includes informative pages about my coding work like
+        My web devloper portfolio you are using right now, built with {react}.
+        This portfolio includes informative pages about my coding work like
         skills, resume and projects information. The contact page contains a
         form that send me an email with the applicant information (using emailJS
         API). The application collect data about the client like projects and
@@ -150,8 +172,8 @@ export const PROJECTS: ProjectData[] = [
       </span>
     ),
     demoUrl: undefined,
-    sourceUrl: 'https://github.com/zabtani/Protfolio',
-    img: protfolioJPG,
+    sourceUrl: 'https://github.com/zabtani/Portfolio',
+    img: portfolioJPG,
     techs: [Techs.REACT, Techs.HTML, Techs.CSS3, Techs.TS],
     tools: [Tools.MUI],
     /* prettier-ignore */
@@ -201,27 +223,27 @@ export const PROJECTS: ProjectData[] = [
 ];
 //Techs and Tools data
 const html = {
-  svg: Html,
+  Svg: Html,
   link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
 };
 const js = {
-  svg: Js,
+  Svg: Js,
   link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 };
 const css = {
-  svg: Css,
+  Svg: Css,
   link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
 };
-const mui = { svg: Mui, link: 'https://mui.com/' };
-const reactjs = { svg: Reactjs, link: 'https://reactjs.org/' };
-const firebase = { svg: Firebase, link: 'https://firebase.google.com/' };
-const mobx = { svg: Mobx, link: 'https://mobx.js.org/README.html' };
-const ts = { svg: Typescript, link: 'https://www.typescriptlang.org/' };
-const redux = { svg: Redux, link: 'https://redux.js.org/' };
-const npm = { svg: Npm, link: 'https://www.npmjs.com/' };
-const vscode = { svg: Vscode, link: 'https://code.visualstudio.com/' };
-const github = { svg: Github, link: GITHUB_LINK };
-const git = { svg: Git, link: '' };
+const mui = { Svg: Mui, link: 'https://mui.com/' };
+const reactjs = { Svg: Reactjs, link: 'https://reactjs.org/' };
+const firebase = { Svg: Firebase, link: 'https://firebase.google.com/' };
+const mobx = { Svg: Mobx, link: 'https://mobx.js.org/README.html' };
+const ts = { Svg: Typescript, link: 'https://www.typescriptlang.org/' };
+const redux = { Svg: Redux, link: 'https://redux.js.org/' };
+const npm = { Svg: Npm, link: 'https://www.npmjs.com/' };
+const vscode = { Svg: Vscode, link: 'https://code.visualstudio.com/' };
+const github = { Svg: Github, link: GITHUB_LINK };
+const git = { Svg: Git, link: '' };
 
 //techs obj
 export const TECHS_SVGS = {

@@ -1,10 +1,10 @@
 enum Paths {
-  HOME = '/',
-  ABOUT = '/Protfolio/welcome',
-  RESUME = '/Protfolio/resume',
-  SKILLS = '/Protfolio/skills',
-  CONTACT = '/Protfolio/contact',
-  PROJECTS = '/Protfolio/projects',
+  HOME = '/Portfolio',
+  ABOUT = '/Portfolio/welcome',
+  RESUME = '/Portfolio/resume',
+  SKILLS = '/Portfolio/skills',
+  CONTACT = '/Portfolio/contact',
+  PROJECTS = '/Portfolio/projects',
 }
 
 export default Paths;

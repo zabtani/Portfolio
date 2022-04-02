@@ -14,5 +14,7 @@ enum Features {
   MOBILE = 'Mobile responsive design',
   BACKEND = 'Works with backend',
   HTTP_HOOK = 'Custom Http Hook',
+  TOOLKIT = 'Redux toolkit',
+  ASYNC_THUNKS = 'Thunk Middleware ',
 }
 export default Features;

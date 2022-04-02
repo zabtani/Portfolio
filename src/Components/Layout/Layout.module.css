@@ -1,8 +1,11 @@
 .navbar nav {
+  z-index: 2;
+
   width: 100%;
   display: flex;
 }
 .navbar {
+  z-index: 2;
   display: flex;
   background: #457fca; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -49,7 +52,7 @@
 }
 
 .navbar ul li {
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 .navbar ul li:hover {
   border-bottom: 3px solid #3aadd6;
@@ -176,6 +179,7 @@
 }
 
 .circles {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;

@@ -1,14 +1,13 @@
 import classes from './Layout.module.css';
-import React, { useEffect, useRef, useState } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import GithubSVG from '../Svg/GithubSVG';
 import LinkedinSVG from '../Svg/LinkedinSVG';
 import LogoSVG from '../Svg/LogoSVG';
 import FadeAnimation from '../Animations/FadeAnimation';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import ActionsContext from '../../store/ActionsProvider';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { GITHUB_LINK, LINKEDIN_LINK, SECTIONS_DATA } from '../../globals';
 
 const Layout = () => {
@@ -80,7 +79,7 @@ const Layout = () => {
 
   return (
     <>
-      <div>
+      <div style={{ height: '100vh', overflow: 'scroll', overflowX: 'hidden' }}>
         <header>
           <div className={navbarClass}>
             <div
