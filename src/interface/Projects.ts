@@ -7,7 +7,7 @@ export interface ProjectData {
   description: JSX.Element;
   demoUrl?: string;
   sourceUrl: string;
-  img: string;
+  imgs: string[];
   techs: Techs[];
   tools: Tools[];
   /* prettier-ignore */

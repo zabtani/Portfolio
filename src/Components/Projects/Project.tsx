@@ -24,6 +24,7 @@ import { ProjectData } from '../../interface/Projects';
 import Features from '../../enums/Features';
 import { svgListItems } from '../../utils';
 import { TECHS_SVGS, TOOLS_SVGS } from '../../globals';
+import NavigationButton from './NavigationButton';
 
 const Project = ({
   name,
@@ -33,7 +34,7 @@ const Project = ({
   tools,
   demoUrl,
   description,
-  img,
+  imgs,
 }: ProjectData) => {
   const actionsCtx = useContext(ActionsContext);
   const [imageIsReady, setImageIsReady] = useState(false);
@@ -41,7 +42,6 @@ const Project = ({
   const t = tools.map((tool) => [tool, TOOLS_SVGS[tool]]);
   const r = techs.map((tech) => [tech, TECHS_SVGS[tech]]);
   const techsArr = [...t, ...r];
-  console.log(techsArr);
   const techsSvgs = Object.fromEntries(techsArr);
   const projectTechsSvgs = svgListItems(techsSvgs);
   const reportProject = (projectName: string, linkType: string) => {
@@ -56,6 +56,12 @@ const Project = ({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+  const [imgIdx, setImgIdx] = useState(0);
+  const nextImg = () =>
+    setImgIdx((prev) => (prev === imgs.length - 1 ? 0 : prev + 1));
+
+  const prevImg = () =>
+    setImgIdx((prev) => (prev === 0 ? imgs.length - 1 : prev - 1));
 
   const linkButtonProps = { variant: 'contained', color: 'primary' } as {};
   const projectFeatures = features.map((feature: Features, idx: number) => (
@@ -88,29 +94,57 @@ const Project = ({
     endIcon: featuresIcon,
     className: classes.featuresButton,
   } as {};
+  const generateImgCircles = () => {
+    return (
+      <div className={classes.imgsCount}>
+        <div className={classes.countContainer}>
+          {imgs.map((img: string, idx: number) => {
+            return (
+              <div
+                className={
+                  imgIdx === idx
+                    ? `${classes.countCircle} ${classes.currentCircle}`
+                    : classes.countCircle
+                }
+              ></div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <FadeAnimation>
       <Card className={classes.project}>
+        <Typography className={classes.title} component="div">
+          <h2> {name}</h2>
+          <ul className={classes.svgs}>{projectTechsSvgs}</ul>
+        </Typography>
+        {/* prettier-ignore */}
         <CardActionArea>
-          <a {...demoLinkProps}>
-            <Typography className={classes.title} component="div">
-              <h2> {name}</h2>
-              <ul className={classes.svgs}>{projectTechsSvgs}</ul>
-            </Typography>
-            {/* prettier-ignore */}
-
+          <div style={{position:'relative'}}>
             <CardMedia
             style={{display:imageIsReady?'block':'none'}}
                 onLoad={() => setImageIsReady(true)}
                 component="img"
                 alt={name}
                 title={name}
-                image={img}
+                image={imgs[imgIdx]}
               />
-
             {!imageIsReady && <Spinner />}
-          </a>
+            <div className={classes.buttonsContainer}>
+         {generateImgCircles()}
+            <NavigationButton
+              className={classes.left}
+              onClick={prevImg}
+            />
+            <NavigationButton
+              className={classes.right}
+              onClick={nextImg}
+            />
+            </div>
+          </div>
         </CardActionArea>
         <CardContent className={classes.content}>
           <Typography variant="body2" component="p">
